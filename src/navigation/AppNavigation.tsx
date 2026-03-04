@@ -2,6 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
+import ScannerScreen from '../screens/ScannerScreen';
 
 // TS: Мы создаем "тип" для списка экранов. 
 // В JS ты бы просто создал навигатор без этой проверки.
@@ -23,6 +24,7 @@ const AppNavigator = () => {
           component={HomeScreen} 
           options={{ title: 'PokeScanner' }} 
         />
+        <Stack.Screen name="Scanner" component={ScannerScreen} options={{ title: 'Сканер карт' }} />
         {/* Экран сканера ты добавишь чуть позже сам */}
       </Stack.Navigator>
     </NavigationContainer>

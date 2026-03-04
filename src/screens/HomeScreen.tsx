@@ -13,12 +13,12 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Готовы найти покемона?</Text>
+      <Text style={styles.title}>Готовы найти карту??</Text>
       
       {/* TouchableOpacity — это кнопка, которую можно стилизовать */}
       <TouchableOpacity 
         style={styles.button}
-        onPress={() => console.log('Переход к сканеру...')} // Сюда добавим навигацию позже
+        onPress={() => navigation.navigate('Scanner')} // Сюда добавим навигацию позже
       >
         <Text style={styles.buttonText}>Начать сканирование</Text>
       </TouchableOpacity>
