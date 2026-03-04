@@ -8,8 +8,8 @@ interface AppButtonProps {
 }
 
 // 2. Создаем компонент. 
-// Мы говорим: "AppButton — это функциональный компонент (React.FC), 
-// который работает по правилам AppButtonProps"
+// AppButton — это функциональный компонент (React.FC), 
+// который работает по правилам AppButtonProps
 const AppButton: React.FC<AppButtonProps> = ({ title, onPress }) => {
   return (
     <TouchableOpacity style={styles.button} onPress={onPress}>
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   text: {
-    color: '#FFCB05', // Желтый цвет логотипа Pokemon
+    color: '#FFFCB8', // Желтый цвет логотипа Pokemon
     fontSize: 16,
     fontWeight: 'bold',
     textTransform: 'uppercase',

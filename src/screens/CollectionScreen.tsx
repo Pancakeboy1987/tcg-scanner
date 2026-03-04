@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
 import {styles} from "../styles/ScannerStyles"
-import AppButton from '../components/AppButton';
 
 // 2. ОПИСЫВАЕМ ТИПЫ НАШИХ ЭКРАНОВ 
 export type RootTabParamList = {
@@ -16,19 +15,19 @@ export type RootTabParamList = {
 
 type HomeScreenNavigationProp = BottomTabNavigationProp<RootTabParamList, 'Home'>;
 
-const HomeScreen = () => {
+const CollectionScreen = () => {
   const navigation = useNavigation<HomeScreenNavigationProp>();
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Готовы найти карту?</Text>
-      <AppButton 
-  title="НАЧАТЬ СКАНИРОВАНИЕ" 
-  onPress={() => navigation.navigate('Scanner')}/>
+      <Text style={styles.title}>Ваша коллекция</Text>
+      
+      {/* Кнопка перехода на экран сканера */}
+
     </View>
   );
 };
 
 
 
-export default HomeScreen;
+export default CollectionScreen;

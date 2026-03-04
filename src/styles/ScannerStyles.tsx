@@ -3,12 +3,31 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: { 
     flex: 1, 
-    backgroundColor: 'black' 
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#2E2D2D' 
+  },
+  title:{
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    color:'white'
   },
   center: { 
     flex: 1, 
     justifyContent: 'center', 
     alignItems: 'center' 
+  },
+  button: {
+    backgroundColor: '#ff4444',
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+    borderRadius: 10,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 18,
+    fontWeight: '600',
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
@@ -34,7 +53,7 @@ export const styles = StyleSheet.create({
     borderRadius: 20,
     overflow: 'hidden',
   },
-  // ТОТ САМЫЙ ОТСУТСТВУЮЩИЙ СТИЛЬ:
+
   captureButtonContainer: {
     position: 'absolute',
     bottom: 40,
