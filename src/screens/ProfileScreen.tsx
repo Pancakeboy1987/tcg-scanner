@@ -18,6 +18,8 @@ const ProfileScreen = () => {
     
         <Text style={styles.title} >Futaba</Text>
 
+        <Text style={styles.title} >Recent Cards</Text>
+
       </View>
 
      
