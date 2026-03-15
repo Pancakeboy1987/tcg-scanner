@@ -8,10 +8,11 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import HomeScreen from '../screens/HomeScreen';
 import ScannerScreen from '../screens/ScannerScreen';
 import CollectionScreen from '../screens/CollectionScreen';
+import ProfileScreen from '../screens/ProfileScreen';
 
 
 
-const ProfileScreen = () => <View style={styles.center}><Text>Профиль</Text></View>;
+
 const SettingsScreen = () => <View style={styles.center}><Text>Настройки</Text></View>;
 // ----------------------------------------------------------------------
 

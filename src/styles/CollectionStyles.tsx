@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: '#f8f8f8',
       paddingHorizontal: 10,
-      paddingTop: 50, // Отступ сверху от челки экрана (Notch)
+      paddingTop: 50, 
     },
     headerTitle: {
       fontSize: 28,
@@ -64,4 +64,10 @@ export const styles = StyleSheet.create({
       color: '#333',
       textAlign: 'center',
     },
+    profileCcntainer: {
+        flex: 1,
+        backgroundColor: '#f8f8f8',
+        paddingHorizontal: 10,
+        paddingTop: 50, 
+      },
   });

@@ -1,28 +1,26 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
-import {styles} from "../styles/ScannerStyles"
+import {styles} from "../styles/ProfileStyles"
 
 
-export type RootTabParamList = {
-  Home: undefined;
-  Collection: undefined;
-  Settings: undefined;
-  Scanner: undefined; // Наш скрытый экран сканера
-};
-
-
-type HomeScreenNavigationProp = BottomTabNavigationProp<RootTabParamList, 'Home'>;
-
-const CollectionScreen = () => {
-  const navigation = useNavigation<HomeScreenNavigationProp>();
+const ProfileScreen = () => {
+  
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Профиль</Text>
-      
-      {/* Кнопка перехода на экран сканера */}
+    <View style={styles.profilecontainer}>
+      <Text style={styles.headerTitle}>Профиль</Text>
+      <View style={styles.mainContainer}>
+        <View style={styles.photoContainer}>
+          <Image source={require('../assets/futaba.png')} style={{ width: 100, height: 100,borderRadius:45, borderColor:'black', borderWidth:0.4 }} />
+        </View>
+    
+        <Text style={styles.title} >Futaba</Text>
+
+      </View>
+
+     
 
     </View>
   );
@@ -30,4 +28,4 @@ const CollectionScreen = () => {
 
 
 
-export default CollectionScreen;
+export default ProfileScreen;

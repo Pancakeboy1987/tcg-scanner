@@ -1,8 +1,14 @@
-import React, { useEffect, useState, useRef } from 'react'; // Добавили useRef
+import React, { useEffect, useState, useRef } from 'react'; 
 import { StyleSheet, Text, View, ActivityIndicator, Alert } from 'react-native';
 import { Camera, useCameraDevice, CameraPermissionStatus } from 'react-native-vision-camera';
 import { styles } from '../styles/ScannerStyles';
-import AppButton from '../components/AppButton'; // Импортируем твою кнопку
+import AppButton from '../components/AppButton'; 
+import { BlurView } from "@react-native-community/blur";
+
+
+
+const SERVER_URL = 'http://10.207.131.67:8000/api/v1/scan';  
+
 
 const ScannerScreen: React.FC = () => {
   const [permissionStatus, setPermissionStatus] = useState<CameraPermissionStatus>('not-determined');
@@ -71,13 +77,16 @@ const ScannerScreen: React.FC = () => {
         <Text style={styles.hint}>Поместите карту в рамку</Text>
       </View>
 
-      
+
       <View style={styles.captureButtonContainer}>
+
         <AppButton 
+        
           title="СКАНИРОВАТЬ КАРТУ" 
           onPress={takePhoto} 
         />
       </View>
+   
     </View>
   );
 };

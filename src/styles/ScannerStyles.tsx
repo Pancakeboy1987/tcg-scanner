@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { BlurView } from "@react-native-community/blur";
 
 export const styles = StyleSheet.create({
   container: { 
@@ -62,4 +63,5 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 20,
   },
+
 });

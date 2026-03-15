@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
+import { BlurView } from "@react-native-community/blur";
 import {styles} from "../styles/ScannerStyles"
 import AppButton from '../components/AppButton';
 
@@ -25,6 +26,7 @@ const HomeScreen = () => {
       <AppButton 
   title="НАЧАТЬ СКАНИРОВАНИЕ" 
   onPress={() => navigation.navigate('Scanner')}/>
+
     </View>
   );
 };
