@@ -21,18 +21,26 @@ const AppButton: React.FC<AppButtonProps> = ({ title, onPress }) => {
 // 3. Стили (тут всё как в JS)
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: '#3B4CCA', // Цвет покебола (синий)
-    paddingVertical: 12,
-    paddingHorizontal: 25,
-    borderRadius: 8,
+    backgroundColor: '#0078d0',
+    borderRadius: 56,
+    // padding: 16px 21px
+    paddingVertical: 16,
+    paddingHorizontal: 21,
+    
+    // Эквивалент display: inline-block (кнопка не на всю ширину)
+    alignSelf: 'center',
+    
+    // Позиционирование
+    position: 'relative',
+    justifyContent: 'center',
     alignItems: 'center',
-    marginVertical: 10,
   },
   text: {
-    color: '#FFFCB8', // Желтый цвет логотипа Pokemon
-    fontSize: 16,
-    fontWeight: 'bold',
-    textTransform: 'uppercase',
+    color: '#FFFCB8',
+    fontSize: 18,
+    fontWeight: '600',
+    textAlign: 'center',
+    textDecorationLine: 'none',
   },
 });
 

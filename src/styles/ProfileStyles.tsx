@@ -4,7 +4,7 @@ import { StyleSheet, Dimensions } from 'react-native';
 export const styles = StyleSheet.create({
     profilecontainer:{
       flex: 1,
-      backgroundColor: '#f8f8f8',
+      backgroundColor: 'white',
       paddingHorizontal: 10,
       paddingTop: 50, 
 
@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
         color: '#333',
         marginBottom: 20,
         marginLeft: 10,
+        
     },
     mainContainer:{
       flex: 1,
@@ -29,6 +30,16 @@ export const styles = StyleSheet.create({
         borderRadius:25,
     },
     title:{
-        fontSize:30
+        fontSize:30,
+        fontWeight: 'bold',
+    },
+    recentContainer:{
+        borderTopWidth:1,
+        borderColor:'grey',
+        width: 300,
+        alignItems: 'center',
+        gap:10,
+        paddingTop:20,
+
     }
 })

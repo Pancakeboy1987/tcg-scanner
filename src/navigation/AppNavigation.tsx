@@ -57,7 +57,7 @@ export const AppNavigation = () => {
             else if (route.name === 'Profile') iconName = focused ? 'albums' : 'albums-outline';
             else if (route.name === 'Settings') iconName = focused ? 'settings' : 'settings-outline';
 
-            return <Icon name={iconName} size={28} color={color} />;
+            return <Icon name={iconName} size={25} color={color} />;
           },
           tabBarActiveTintColor: '#FFCB05', 
           tabBarInactiveTintColor: '#a1a1aa',

@@ -1,12 +1,15 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import  { useEffect } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Image,Dimensions } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
 import {styles} from "../styles/ProfileStyles"
 
 
+const { width, height } = Dimensions.get('window');
+
+
 const ProfileScreen = () => {
-  
+
 
   return (
     <View style={styles.profilecontainer}>
@@ -17,10 +20,14 @@ const ProfileScreen = () => {
         </View>
     
         <Text style={styles.title} >Futaba</Text>
+        <View style={styles.recentContainer}>
+          <Text style={styles.title} >Recent Cards</Text>
+        </View>
 
-        <Text style={styles.title} >Recent Cards</Text>
+        </View>
 
-      </View>
+        
+
 
      
 
@@ -31,3 +38,4 @@ const ProfileScreen = () => {
 
 
 export default ProfileScreen;
+
